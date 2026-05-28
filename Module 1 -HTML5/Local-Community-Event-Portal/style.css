@@ -1,6 +1,25 @@
 body{
-    background-color:lavenderblush
+    background-color:lavenderblush;
+    font-family: Arial, sans-serif;
 }
+
+main {
+    text-align: center;
+    .image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+}
+
+.image {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
 form{
     width: 380px;
     align-items: center;
