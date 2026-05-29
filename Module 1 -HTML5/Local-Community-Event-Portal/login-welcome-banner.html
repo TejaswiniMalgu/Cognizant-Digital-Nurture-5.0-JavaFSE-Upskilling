@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome - Local Community Event Portal</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        #welcome-banner {
+            background-color: #7cb8ed;
+            padding: 25px 0;
+            text-align: center;
+            margin: 30px;
+            border-radius: 10px;
+        }
+
+        #welcome-banner img {
+            display: block;
+            width: 90%;
+            max-width: 900px;
+            height: auto;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,8 +29,40 @@
     </header>
     <main>
         <p align="center">You have successfully logged in! Explore upcoming events and connect with your community.</p>
-        <h2 align="center">Upcoming Events with special Offers exclusively for you!</h2>
-        <img src="images/welcome.png" alt="Welcome Image" class="image" width="600" height="400">
+        <span style="display: block; text-align: center; margin-top: 20px; font-weight: bold; color: rgb(29, 28, 28); background-color: #efd9e9f0; padding: 10px;">Offers Exclusive to You! <a href="#image-gallery">View Events</a></span>
+        <div id="welcome-banner">
+            <img src="images/welcome.png" alt="Welcome Image" width="90%">
+        </div>
+        <div id="image-gallery" style="margin: 30px; padding: 30px; background-color:#a13b86f0 ; border-radius: 10px; overflow: hidden;">
+            <span style="display: block; text-align: center; margin-top: 20px; font-weight: bold; color: rgb(29, 28, 28); background-color: #e9d7e4f0; padding: 10px;">GALLERY</span>
+            <table align="center" cellspacing="20">
+                <span style="display: block; text-align: center; margin-top: 20px; font-weight: bold; color: rgb(29, 28, 28); background-color: #c365aaf0; padding: 5px;">ART EVENTS</span>
+                <tr>
+                    <td><img src="images/gallery-art1.png" alt="Art Event 1" class="highlight" width="200" height="150" style="background-color:black; padding: 10px;"></td>
+                    <td><img src="images/gallery-art2.png" alt="Art Event 2" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
+                    <td><img src="images/gallery-art3.png" alt="Art Event 3" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
+                </tr>
+            </table>
+            <table align="center" cellspacing="20">
+                <span style="display: block; text-align: center; margin-top: 20px; font-weight: bold; color: rgb(29, 28, 28); background-color: #c365aaf0; padding: 5px;">MUSIC EVENTS</span>
+                <tr>
+                    <td><img src="images/gallery-music1.png" alt="Music Event 1" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
+                    <td><img src="images/gallery-music2.png" alt="Music Event 2" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
+                    <td><img src="images/gallery-music3.png" alt="Music Event 3" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
+                </tr>
+            </table>
+            <table align="center" cellspacing="20">
+                <span style="display: block; text-align: center; margin-top: 20px; font-weight: bold; color: rgb(29, 28, 28); background-color: #c365aaf0; padding: 5px;">SPORT EVENTS</span>
+                <tr>
+                    <td><img src="images/gallery-sport1.png" alt="Sport Event 1" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
+                    <td><img src="images/gallery-sport2.png" alt="Sport Event 2" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
+                    <td><img src="images/gallery-sport3.png" alt="Sport Event 3" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
+                </tr>
+            </table>
+
+                
+        </div>
+        
     </main> 
 </body>
 </html>
