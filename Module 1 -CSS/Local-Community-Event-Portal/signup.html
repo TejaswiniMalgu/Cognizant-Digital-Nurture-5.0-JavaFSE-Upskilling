@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Local Community Event Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form {
+            label{
+                display: block;
+                margin: 10px;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+        a{
+            text-decoration: none;
+            
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center">Sign Up - Local Community Event Portal</h1>
+    </header>
+    <main>
+        <form action="login.html" method="post">
+            <h1 align="center">Create Account</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit" value="Sign Up">Sign Up</button><br><br>
+            <a href="login.html" style="margin-left: 20px;">Already have an account? Login </a>
+        </form>
+    </main>
+</body>
+</html>
