@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,6 +21,94 @@
             height: auto;
             margin: 0 auto;
         }
+
+        .section-box {
+            margin: 30px;
+            padding: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .section-box h1 {
+            margin-top: 0;
+        }
+
+        .form-block {
+            width: 90%;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .form-block label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        .form-block input,
+        .form-block select,
+        .form-block textarea {
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 6px;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #999;
+        }
+
+        .form-block button {
+            display: block;
+            margin: 18px auto 0;
+            padding: 12px 26px;
+            background-color: #3b7cca;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .status-box {
+            margin-top: 8px;
+            font-size: 0.95rem;
+        }
+
+        .promo-image {
+            display: block;
+            margin: 16px auto;
+            width: 100%;
+            max-width: 540px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .promo-image.enlarged {
+            transform: scale(1.22);
+        }
+
+        #video-section video {
+            display: block;
+            width: 100%;
+            max-width: 640px;
+            margin: 0 auto;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        output {
+            display: block;
+            margin-top: 14px;
+            font-weight: bold;
+        }
+        a{
+            color: #1d1c1c;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -29,40 +117,263 @@
     </header>
     <main>
         <p align="center">You have successfully logged in! Explore upcoming events and connect with your community.</p>
-        <span style="display: block; text-align: center; margin-top: 20px; font-weight: bold; color: rgb(29, 28, 28); background-color: #efd9e9f0; padding: 10px;">Offers Exclusive to You! <a href="#image-gallery">View Events</a></span>
-        <div id="welcome-banner">
-            <img src="images/welcome.png" alt="Welcome Image" width="90%">
-        </div>
-        <div id="image-gallery" style="margin: 30px; padding: 30px; background-color:#a13b86f0 ; border-radius: 10px; overflow: hidden;">
-            <span style="display: block; text-align: center; margin-top: 20px; font-weight: bold; color: rgb(29, 28, 28); background-color: #e9d7e4f0; padding: 10px;">GALLERY</span>
-            <table align="center" cellspacing="20">
-                <span style="display: block; text-align: center; margin-top: 20px; font-weight: bold; color: rgb(29, 28, 28); background-color: #c365aaf0; padding: 5px;">ART EVENTS</span>
-                <tr>
-                    <td><img src="images/gallery-art1.png" alt="Art Event 1" class="highlight" width="200" height="150" style="background-color:black; padding: 10px;"></td>
-                    <td><img src="images/gallery-art2.png" alt="Art Event 2" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
-                    <td><img src="images/gallery-art3.png" alt="Art Event 3" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
-                </tr>
-            </table>
-            <table align="center" cellspacing="20">
-                <span style="display: block; text-align: center; margin-top: 20px; font-weight: bold; color: rgb(29, 28, 28); background-color: #c365aaf0; padding: 5px;">MUSIC EVENTS</span>
-                <tr>
-                    <td><img src="images/gallery-music1.png" alt="Music Event 1" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
-                    <td><img src="images/gallery-music2.png" alt="Music Event 2" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
-                    <td><img src="images/gallery-music3.png" alt="Music Event 3" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
-                </tr>
-            </table>
-            <table align="center" cellspacing="20">
-                <span style="display: block; text-align: center; margin-top: 20px; font-weight: bold; color: rgb(29, 28, 28); background-color: #c365aaf0; padding: 5px;">SPORT EVENTS</span>
-                <tr>
-                    <td><img src="images/gallery-sport1.png" alt="Sport Event 1" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
-                    <td><img src="images/gallery-sport2.png" alt="Sport Event 2" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
-                    <td><img src="images/gallery-sport3.png" alt="Sport Event 3" class="highlight" width="200" height="150" style="background-color: black; padding: 10px;"></td>
-                </tr>
-            </table>
+        <span style="display: block; text-align: center; margin-top: 20px; font-weight: bold; color: rgb(29, 28, 28); background-color: #efd9e9f0; padding: 10px;">Offers Exclusive to You! </span>
+            
+        <span style="display: block; text-align: center; margin-top: 20px; font-weight: bold; color: rgb(29, 28, 28); background-color: #e7d9eff0; padding: 10px;"><a href="#image-gallery">View Events</a><a href="#registration-section">Register</a><a href="#feedback-section">Feedback</a></span>
 
-                
+        <div id="welcome-banner">
+            <img src="images/welcome.png" alt="Welcome Image" width="90%" height="90%">
         </div>
-        
-    </main> 
+
+        <div id="image-gallery" class="section-box" style="background-color:#a13b86f0; color:white;">
+            <span style="display: block; text-align: center; margin-bottom: 20px; font-weight: bold; background-color: #e9d7e4f0; color: #1d1c1c; padding: 10px;">GALLERY</span>
+            <table align="center" cellspacing="20">
+                <tr>
+                    <td colspan="3" style="text-align: center; font-weight: bold; color: white; background-color: #c365aaf0; padding: 5px;">ART EVENTS</td>
+                </tr>
+                <tr>
+                    <td><figure><img src="images/gallery-art1.png" alt="Art Event 1" class="highlight" width="260" height="200" style="background-color:black; padding: 10px;"><figcaption>Colorful art exhibition for local talent.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-art2.png" alt="Art Event 2" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Creative workshop with live painting.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-art3.png" alt="Art Event 3" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Gallery night featuring handmade crafts.</figcaption></figure></td>
+                </tr>
+            </table>
+            <table align="center" cellspacing="20">
+                <tr>
+                    <td colspan="3" style="text-align: center; font-weight: bold; color: white; background-color: #c365aaf0; padding: 5px;">MUSIC EVENTS</td>
+                </tr>
+                <tr>
+                    <td><figure><img src="images/gallery-music1.png" alt="Music Event 1" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Live acoustic performance by local singers.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-music2.png" alt="Music Event 2" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Jazz evening with community bands.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-music3.png" alt="Music Event 3" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Melody festival for all ages.</figcaption></figure></td>
+                </tr>
+            </table>
+            <table align="center" cellspacing="20">
+                <tr>
+                    <td colspan="3" style="text-align: center; font-weight: bold; color: white; background-color: #c365aaf0; padding: 5px;">SPORT EVENTS</td>
+                </tr>
+                <tr>
+                    <td><figure><img src="images/gallery-sport1.png" alt="Sport Event 1" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Morning yoga and wellness session.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-sport2.png" alt="Sport Event 2" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Friendly football match for volunteers.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-sport3.png" alt="Sport Event 3" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Fitness challenge with community teams.</figcaption></figure></td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="registration-section" class="section-box" style="background-color:#f4a455f0;">
+            <h1 align="center">Event Registration</h1>
+            <div class="form-block">
+                <form onsubmit="return false;">
+                    <label for="regName">Name:</label>
+                    <input type="text" id="regName" placeholder="Enter your name" required oninput="formDirty=true">
+
+                    <label for="regEmail">Email:</label>
+                    <input type="email" id="regEmail" placeholder="Enter your email" required oninput="formDirty=true">
+
+                    <label for="regPhone">Phone Number:</label>
+                    <input type="tel" id="regPhone" placeholder="Enter 10-digit phone" onblur="validatePhone()" required oninput="formDirty=true">
+                    <div id="phoneValidation" class="status-box"></div>
+
+                    <label for="eventType">Event Type:</label>
+                    <select id="eventType" onchange="updateFee()" required>
+                        <option>Music</option>
+                        <option>Art</option>
+                        <option>Sports</option>
+                    </select>
+                    <div id="feeDisplay" class="status-box"></div>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="Enter message" oninput="formDirty=true"></textarea>
+
+                    <button type="button" onclick="submitRegistration()">Submit Registration</button>
+                    <output id="registerResult"></output>
+                </form>
+            </div>
+            <div style="text-align:center; margin-top: 12px;">
+                <button type="button" onclick="clearPreferences()">Clear Preferences</button>
+            </div>
+        </div>
+
+        <div id="feedback-section" class="section-box" style="background-color:#83bd8bf0;">
+            <h1 align="center">Feedback Form</h1>
+            <div class="form-block">
+                <form onsubmit="return false;">
+                    <label for="feedbackName">Name:</label>
+                    <input type="text" id="feedbackName" placeholder="Enter your name" required oninput="formDirty=true">
+
+                    <label for="feedbackEmail">Email:</label>
+                    <input type="email" id="feedbackEmail" placeholder="Enter your email" required oninput="formDirty=true">
+
+                    <label for="feedback">Feedback:</label>
+                    <textarea id="feedback" placeholder="Enter your feedback" onkeyup="countFeedbackChars()" required></textarea>
+                    <div id="feedbackChars" class="status-box">Characters: 0</div>
+
+                    <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+                    <output id="feedbackResult"></output>
+                </form>
+            </div>
+
+            <figure style="text-align:center; margin-top: 25px;">
+                <img id="promoImage" src="images/gallery-music1.png" alt="Event promo" class="promo-image" ondblclick="toggleImageSize()" title="Double-click to enlarge">
+                <figcaption>Double-click the promo image to zoom.</figcaption>
+            </figure>
+        </div>
+
+        <div id="video-section" class="section-box" style="background-color:#d5e7f7;">
+            <h1 align="center">Event Promo Video</h1>
+            <video controls oncanplay="videoReady()" id="promoVideo">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div id="videoStatus" class="status-box">Waiting for video...</div>
+        </div>
+
+        <div id="geolocation-section" class="section-box" style="background-color:#d1f7d7;">
+            <h1 align="center">Find Nearby Events</h1>
+            <div style="text-align:center;">
+                <button type="button" onclick="findNearbyEvents()">Find Nearby Events</button>
+                <div id="geoResult" class="status-box"></div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let formDirty = false;
+
+        function validatePhone() {
+            const phone = document.getElementById('regPhone').value.trim();
+            const validation = document.getElementById('phoneValidation');
+            const pattern = /^\d{10}$/;
+            if (!pattern.test(phone)) {
+                validation.textContent = 'Phone number must be 10 digits.';
+                validation.style.color = 'red';
+                return false;
+            }
+            validation.textContent = 'Phone number looks good.';
+            validation.style.color = 'green';
+            return true;
+        }
+
+        function updateFee() {
+            const fees = { Music: 50, Art: 40, Sports: 30 };
+            const select = document.getElementById('eventType');
+            const feeDisplay = document.getElementById('feeDisplay');
+            const type = select.value;
+            feeDisplay.textContent = `Selected ${type} event. Fee: $${fees[type]}.`;
+            feeDisplay.style.color = '#003366';
+            localStorage.setItem('preferredEventType', type);
+            sessionStorage.setItem('preferredEventType', type);
+            formDirty = true;
+        }
+
+        function submitRegistration() {
+            const name = document.getElementById('regName').value.trim();
+            const email = document.getElementById('regEmail').value.trim();
+            const date = document.getElementById('date').value;
+            const eventType = document.getElementById('eventType').value;
+            const validPhone = validatePhone();
+            const result = document.getElementById('registerResult');
+            if (!name || !email || !date || !validPhone) {
+                result.textContent = 'Please complete the registration form and fix any errors.';
+                result.style.color = 'red';
+                return;
+            }
+            result.textContent = `Thank you, ${name}! Your ${eventType} event is registered for ${date}.`;
+            result.style.color = 'green';
+            formDirty = false;
+            alert('Registration confirmed. Thank you for signing up!');
+        }
+
+        function countFeedbackChars() {
+            const feedback = document.getElementById('feedback');
+            const chars = document.getElementById('feedbackChars');
+            chars.textContent = `Characters: ${feedback.value.length}`;
+            formDirty = feedback.value.length > 0;
+        }
+
+        function toggleImageSize() {
+            const image = document.getElementById('promoImage');
+            image.classList.toggle('enlarged');
+        }
+
+        function videoReady() {
+            const status = document.getElementById('videoStatus');
+            status.textContent = 'Video ready to play.';
+            status.style.color = 'green';
+        }
+
+        function clearPreferences() {
+            localStorage.removeItem('preferredEventType');
+            sessionStorage.removeItem('preferredEventType');
+            const eventType = document.getElementById('eventType');
+            eventType.selectedIndex = 0;
+            const feeDisplay = document.getElementById('feeDisplay');
+            feeDisplay.textContent = 'Preferences cleared. Default event type is selected.';
+            feeDisplay.style.color = '#333';
+            document.getElementById('registerResult').textContent = 'Preferences cleared.';
+            document.getElementById('registerResult').style.color = '#333';
+            formDirty = false;
+        }
+
+        function findNearbyEvents() {
+            const result = document.getElementById('geoResult');
+            if (!navigator.geolocation) {
+                result.textContent = 'Geolocation is not supported by your browser.';
+                result.style.color = 'red';
+                return;
+            }
+            result.textContent = 'Looking for nearby events...';
+            result.style.color = '#003366';
+            navigator.geolocation.getCurrentPosition(
+                position => {
+                    result.textContent = `Latitude: ${position.coords.latitude.toFixed(5)}, Longitude: ${position.coords.longitude.toFixed(5)}.`;
+                    result.style.color = 'green';
+                },
+                error => {
+                    if (error.code === error.PERMISSION_DENIED) {
+                        result.textContent = 'Permission denied. Please allow location access to find nearby events.';
+                    } else if (error.code === error.TIMEOUT) {
+                        result.textContent = 'Location request timed out. Try again in a moment.';
+                    } else {
+                        result.textContent = `Unable to fetch location: ${error.message}`;
+                    }
+                    result.style.color = 'red';
+                },
+                { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+            );
+        }
+
+        window.addEventListener('beforeunload', function (event) {
+            if (formDirty) {
+                event.preventDefault();
+                event.returnValue = 'You have unfinished changes. Are you sure you want to leave?';
+                return event.returnValue;
+            }
+        });
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const savedType = localStorage.getItem('preferredEventType');
+            if (savedType) {
+                const eventType = document.getElementById('eventType');
+                eventType.value = savedType;
+            }
+            updateFee();
+            countFeedbackChars();
+        });
+
+        function submitFeedback() {
+            const name = document.getElementById('feedbackName').value.trim();
+            const email = document.getElementById('feedbackEmail').value.trim();
+            const feedback = document.getElementById('feedback').value.trim();
+            const result = document.getElementById('feedbackResult');
+            if (!name || !email || !feedback) {
+                result.textContent = 'Please fill in your feedback details before submitting.';
+                result.style.color = 'red';
+                return;
+            }
+            result.textContent = 'Thank you for your feedback! We appreciate your input.';
+            result.style.color = 'green';
+            formDirty = false;
+        }
+    </script>
 </body>
 </html>
