@@ -6,33 +6,42 @@
     <title>Login - Local Community Event Portal</title>
     <link rel="stylesheet" href="style.css">
     <style>
+                /* Styles labels inside the login form */
         form {
-            label{
-                display: block;
-                margin: 10px;
-                font-weight: bold;
-                text-align: left;
+            label {
+                display: block;      /* Places label on a new line */
+                margin: 10px;        /* Adds space around labels */
+                font-weight: bold;   /* Makes label text bold */
+                text-align: left;    /* Aligns label text to the left */
+                opacity: 0.8;        /* Makes labels slightly transparent */
             }
         }
-        a{
-            text-decoration: none;
-            
-            font-weight: bold;
-            display: inline-block;
-            margin: 10px;
-            align-items: center;
-            padding: 5px 10px;
-            border-radius: 10px;
+
+        /* Styles hyperlinks */
+        a {
+            text-decoration: none;  /* Removes underline */
+            font-weight: bold;      /* Makes link text bold */
+            display: inline-block;  /* Allows padding and margin */
+            margin: 10px;           /* Space around link */
+            align-items: center;    /* Aligns content (useful in flex layouts) */
+            padding: 5px 10px;      /* Inner spacing */
+            border-radius: 10px;    /* Rounded corners */
+        }
+
+        /* Styles the page background */
+        body {
+            background-image: url("images/login-back.png"); /* Background image */
+            background-size: cover;                         /* Covers entire page */
+            background-position: center;                    /* Centers image */
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1 align="center">Welcome to the Local Community Event Portal</h1>
-    </header>
+    
     <main>
     
         <form action="login-welcome-banner.html" method="post">
+            <h1 align="center" style="color: #075d79;">Welcome to the Local Community Event Portal</h1><br>
             <h1 align="center">Login</h1>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required><br><br>

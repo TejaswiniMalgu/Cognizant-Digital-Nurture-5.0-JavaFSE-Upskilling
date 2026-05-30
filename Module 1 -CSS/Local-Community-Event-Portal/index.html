@@ -1,89 +1,116 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Community Event Portal</title>
     <style>
-         a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            display: inline-block;
-            margin: 10px;
-            align-items: center;
-            padding: 5px 10px;
-            border-radius: 10px;
+                /* Styles all navigation links */
+        a {
+            text-decoration: none;   /* Removes underline */
+            color: white;            /* Sets text color to white */
+            font-weight: bold;       /* Makes text bold */
+            display: inline-block;   /* Allows padding and margin */
+            margin: 10px;            /* Adds space around links */
+            align-items: center;     /* Aligns content (useful in flex layouts) */
+            padding: 5px 10px;       /* Adds inner spacing */
+            border-radius: 10px;     /* Rounds link corners */
         }
+
+        /* Changes link color when hovered */
         nav a:hover {
             color: #007BFF;
         }
+
+        /* Styles the navigation bar container */
         span {
-            display: block;
-            text-align: center;
-            margin-top: 10px;
-            background-color: #e68f80d5;
-            padding: 10px;
+            display: block;                 /* Makes span behave like a block */
+            text-align: center;             /* Centers navigation links */
+            margin-top: 10px;               /* Space above navigation */
+            background-color: #e68f80d5;    /* Light coral background */
+            padding: 10px;                  /* Inner spacing */
         }
+
+        /* Centers images horizontally */
         .image {
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
-        .highlight {
-            border: 2px solid #007BFF;
-            padding: 5px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            
-        }
-        div{
-            text-align: center;
-            margin: 20px;
-            padding: 10px;
-            
-            border-radius: 10px;
 
+        /* Adds a border effect to highlighted images */
+        .highlight {
+            border: 2px solid #007BFF;      /* Blue border */
+            padding: 5px;                   /* Space between image and border */
         }
-        #home-page {
-            background-color: #ff9987d5;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        #home {
-            background-color: #ffe987d5;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        #events {
-            background-color: #e3ff87d5;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        #contact {
-            background-color: #87ffc9d5;
-            padding: 20px;
-            border-radius: 10px;
-        }
+
+        /* Styles the footer section */
         footer {
-            background-color: #2c282ad5;
-            padding: 10px;
-            border-radius: 10px;
-            color: white;
-            margin-top: 20px;
-            border-radius: 10px;
-            padding: 10px;
+            text-align: center;             /* Centers footer text */
+            margin-top: 20px;               /* Space above footer */
+            padding: 10px;                  /* Inner spacing */
         }
+
+        /* Common styling for all content containers */
+        div {
+            text-align: center;             /* Centers content */
+            margin: 20px;                   /* Space around container */
+            padding: 10px;                  /* Inner spacing */
+            border-radius: 10px;            /* Rounded corners */
+        }
+
+        /* Styles the header/home-page section */
+        #home-page {
+            background-image: url('images/login-back.png'); /* Background image */
+            background-size: cover;         /* Covers entire container */
+            color: white;                   /* White text */
+            padding: 20px;                  /* Inner spacing */
+            border-radius: 10px;            /* Rounded corners */
+        }
+
+        /* Styles the Home section */
+        #home {
+            background-image: url('images/login-back.png');
+            background-size: cover;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Styles the Events section */
+        #events {
+            background-image: url('images/login-back.png');
+            background-size: cover;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Styles the Contact section */
+        #contact {
+            background-image: url('images/login-back.png');
+            background-size: cover;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Footer background styling */
+        footer {
+            background-image: url('images/login-back.png');
+            background-size: cover;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
         
     </style>
 </head>
 <body> 
     <header>
         <div id="home-page">
-        <h1 align="center">Local Community Event Portal</h1>
+        <h1 align="center" >Local Community Event Portal</h1>
         <span>
         <nav>
             <a href="#Home">Home </a> 

@@ -1,56 +1,66 @@
-body{
-    background-color:lavenderblush;
+﻿/* Set the overall page background color and default font */
+body {
+    background-color: lavenderblush;
     font-family: Arial, sans-serif;
 }
 
+/* Style the main content section */
 main {
     text-align: center;
+
+    /* Center images inside the main section */
     .image {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
-}
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        height: auto;
+    }
 }
 
+/* Style for highlighted images */
 .highlight {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: 200px;
-    width: 200px;
+    display: block;          /* Makes the image behave like a block element */
+    margin: 20px auto;       /* Centers the image horizontally */
+    max-width: 100%;         /* Prevents image from overflowing its container */
+    height: 200px;           /* Fixed height */
+    width: 200px;            /* Fixed width */
 }
 
-form{
-    width: 380px;
-    align-items: center;
-    margin: 50px auto;
-    border: 1px solid #ccc;
-    padding: 20px;
-    background-color: white;
-    opacity: 0.9;
-    border-radius: 10px;
-    label{
-        display: block;
-        margin-bottom: 5px;
-    }
-    input{
-        padding: 8px;
-        width: 90%;
-        margin-bottom: 10px;
-        border-radius: 5px;
-    }
-    button{
-        padding: 10px 20px;
-        background-color: rgb(47, 231, 120);
-        color: white;
-        border: none;
-        cursor: pointer;
-        width: 50%;
-        display: block;
-        margin: 0 auto;
-        border-radius: 5px;
-    }
-    
+/* Form container styling */
+form {
+    width: 380px;                    /* Fixed form width */
+    align-items: center;             /* Align items inside the form */
+    margin: 50px auto;               /* Center the form horizontally */
+    border: 1px solid #ccc;          /* Light gray border */
+    padding: 20px;                   /* Space inside the form */
+    background-color: white;         /* White background */
+    opacity: 0.9;                    /* Slight transparency */
+    border-radius: 10px;             /* Rounded corners */
 
+    /* Style form labels */
+    label {
+        display: block;              /* Place each label on a new line */
+        margin-bottom: 5px;          /* Space below labels */
+    }
+
+    /* Style form input fields */
+    input {
+        padding: 8px;                /* Inner spacing */
+        width: 90%;                  /* Input width relative to form */
+        margin-bottom: 10px;         /* Space between inputs */
+        border-radius: 5px;          /* Rounded corners */
+    }
+
+    /* Style submit button */
+    button {
+        padding: 10px 20px;          /* Button padding */
+        background-color: rgb(47, 231, 120); /* Green background */
+        color: white;                /* White text */
+        border: none;                /* Remove default border */
+        cursor: pointer;             /* Show pointer on hover */
+        width: 50%;                  /* Button width */
+        display: block;              /* Block-level element */
+        margin: 0 auto;              /* Center the button */
+        border-radius: 5px;          /* Rounded corners */
+    }
 }

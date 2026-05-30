@@ -6,108 +6,124 @@
     <title>Welcome - Local Community Event Portal</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        
+                /* Styles the welcome banner container */
         #welcome-banner {
-            background-color: #7cb8ed;
-            padding: 25px 0;
-            text-align: center;
-            margin: 30px;
-            border-radius: 10px;
+            background-image: url("images/login-back.png"); /* Background image */
+            padding: 25px 0;                                /* Vertical spacing */
+            text-align: center;                             /* Center content */
+            margin: 30px;                                   /* Outer spacing */
+            border-radius: 10px;                            /* Rounded corners */
         }
 
+        /* Styles the welcome banner image */
         #welcome-banner img {
-            display: block;
-            width: 90%;
-            max-width: 900px;
-            height: auto;
-            margin: 0 auto;
+            display: block;         /* Makes image a block element */
+            width: 90%;             /* Responsive width */
+            max-width: 900px;       /* Maximum image width */
+            height: auto;           /* Maintain aspect ratio */
+            margin: 0 auto;         /* Center image horizontally */
         }
 
+        /* Common styling for all content sections */
         .section-box {
-            margin: 30px;
-            padding: 30px;
-            border-radius: 10px;
-            overflow: hidden;
+            margin: 30px;           /* Space around section */
+            padding: 30px;          /* Space inside section */
+            border-radius: 10px;    /* Rounded corners */
+            overflow: hidden;       /* Prevent content overflow */
         }
 
+        /* Removes top margin from section headings */
         .section-box h1 {
             margin-top: 0;
         }
 
+        /* Styles form containers */
         .form-block {
-            width: 90%;
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: left;
+            width: 90%;             /* Responsive width */
+            max-width: 700px;       /* Maximum width */
+            margin: 0 auto;         /* Center form */
+            text-align: left;       /* Left-align form elements */
         }
 
+        /* Styles form labels */
         .form-block label {
-            display: block;
-            margin-top: 12px;
-            font-weight: bold;
+            display: block;         /* Place label on new line */
+            margin-top: 12px;       /* Space above label */
+            font-weight: bold;      /* Bold text */
         }
 
+        /* Styles input fields, dropdowns and textareas */
         .form-block input,
         .form-block select,
         .form-block textarea {
-            width: 100%;
-            box-sizing: border-box;
-            margin-top: 6px;
-            padding: 8px;
-            border-radius: 6px;
-            border: 1px solid #999;
+            width: 100%;            /* Full width */
+            box-sizing: border-box; /* Include padding in width */
+            margin-top: 6px;        /* Space above element */
+            padding: 8px;           /* Inner spacing */
+            border-radius: 6px;     /* Rounded corners */
+            border: 1px solid #999; /* Gray border */
         }
 
+        /* Styles form buttons */
         .form-block button {
-            display: block;
-            margin: 18px auto 0;
-            padding: 12px 26px;
-            background-color: #3b7cca;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
+            display: block;             /* Block-level button */
+            margin: 18px auto 0;        /* Center button */
+            padding: 12px 26px;         /* Inner spacing */
+            background-color: #3b7cca;  /* Blue background */
+            color: white;               /* White text */
+            border: none;               /* Remove border */
+            border-radius: 6px;         /* Rounded corners */
+            cursor: pointer;            /* Pointer on hover */
         }
 
+        /* Styles validation and status messages */
         .status-box {
-            margin-top: 8px;
-            font-size: 0.95rem;
+            margin-top: 8px;        /* Space above message */
+            font-size: 0.95rem;     /* Slightly smaller text */
         }
 
+        /* Styles promotional images */
         .promo-image {
-            display: block;
-            margin: 16px auto;
-            width: 100%;
-            max-width: 540px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
+            display: block;                     /* Block element */
+            margin: 16px auto;                  /* Center image */
+            width: 100%;                        /* Responsive width */
+            max-width: 540px;                   /* Maximum width */
+            border-radius: 10px;                /* Rounded corners */
+            cursor: pointer;                    /* Clickable cursor */
+            transition: transform 0.3s ease;    /* Smooth zoom effect */
         }
 
+        /* Enlarged image effect */
         .promo-image.enlarged {
             transform: scale(1.22);
         }
 
+        /* Styles the video player */
         #video-section video {
-            display: block;
-            width: 100%;
-            max-width: 640px;
-            margin: 0 auto;
-            border: 2px solid #333;
-            border-radius: 10px;
+            display: block;          /* Block element */
+            width: 100%;             /* Responsive width */
+            max-width: 640px;        /* Maximum width */
+            margin: 0 auto;          /* Center video */
+            border: 2px solid #333;  /* Dark border */
+            border-radius: 10px;     /* Rounded corners */
         }
 
+        /* Styles output messages */
         output {
-            display: block;
-            margin-top: 14px;
-            font-weight: bold;
+            display: block;          /* Display on new line */
+            margin-top: 14px;        /* Space above */
+            font-weight: bold;       /* Bold text */
         }
-        a{
-            color: #1d1c1c;
-            text-decoration: none;
-            display: inline-block;
-            margin: 0 10px;
-            padding: 5px 10px;
-            border-radius: 5px;
+
+        /* Styles navigation links */
+        a {
+            color: #1d1c1c;          /* Dark text color */
+            text-decoration: none;   /* Remove underline */
+            display: inline-block;   /* Allow spacing */
+            margin: 0 10px;          /* Horizontal spacing */
+            padding: 5px 10px;       /* Inner spacing */
+            border-radius: 5px;      /* Rounded corners */
         }
     </style>
 </head>
@@ -125,16 +141,16 @@
             <img src="images/welcome.png" alt="Welcome Image" width="90%" height="90%">
         </div>
 
-        <div id="image-gallery" class="section-box" style="background-color:#a13b86f0; color:white;">
+        <div id="image-gallery" class="section-box" style="background-image: url('images/login-back.png'); background-size: cover; background-position: center; color:white;">
             <span style="display: block; text-align: center; margin-bottom: 20px; font-weight: bold; background-color: #e9d7e4f0; color: #1d1c1c; padding: 10px;">GALLERY</span>
             <table align="center" cellspacing="20">
                 <tr>
                     <td colspan="3" style="text-align: center; font-weight: bold; color: white; background-color: #c365aaf0; padding: 5px;">ART EVENTS</td>
                 </tr>
                 <tr>
-                    <td><figure><img src="images/gallery-art1.png" alt="Art Event 1" class="highlight" width="260" height="200" style="background-color:black; padding: 10px;"><figcaption>Colorful art exhibition for local talent.</figcaption></figure></td>
-                    <td><figure><img src="images/gallery-art2.png" alt="Art Event 2" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Creative workshop with live painting.</figcaption></figure></td>
-                    <td><figure><img src="images/gallery-art3.png" alt="Art Event 3" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Gallery night featuring handmade crafts.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-art1.png" alt="Art Event 1" class="highlight" width="260" height="200" style="background-color:white; padding: 10px;"><figcaption>Colorful art exhibition for local talent.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-art2.png" alt="Art Event 2" class="highlight" width="260" height="200" style="background-color: white; padding: 10px;"><figcaption>Creative workshop with live painting.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-art3.png" alt="Art Event 3" class="highlight" width="260" height="200" style="background-color: white; padding: 10px;"><figcaption>Gallery night featuring handmade crafts.</figcaption></figure></td>
                 </tr>
             </table>
             <table align="center" cellspacing="20">
@@ -142,9 +158,9 @@
                     <td colspan="3" style="text-align: center; font-weight: bold; color: white; background-color: #c365aaf0; padding: 5px;">MUSIC EVENTS</td>
                 </tr>
                 <tr>
-                    <td><figure><img src="images/gallery-music1.png" alt="Music Event 1" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Live acoustic performance by local singers.</figcaption></figure></td>
-                    <td><figure><img src="images/gallery-music2.png" alt="Music Event 2" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Jazz evening with community bands.</figcaption></figure></td>
-                    <td><figure><img src="images/gallery-music3.png" alt="Music Event 3" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Melody festival for all ages.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-music1.png" alt="Music Event 1" class="highlight" width="260" height="200" style="background-color: white; padding: 10px;"><figcaption>Live acoustic performance by local singers.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-music2.png" alt="Music Event 2" class="highlight" width="260" height="200" style="background-color: white; padding: 10px;"><figcaption>Jazz evening with community bands.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-music3.png" alt="Music Event 3" class="highlight" width="260" height="200" style="background-color: white; padding: 10px;"><figcaption>Melody festival for all ages.</figcaption></figure></td>
                 </tr>
             </table>
             <table align="center" cellspacing="20">
@@ -152,14 +168,14 @@
                     <td colspan="3" style="text-align: center; font-weight: bold; color: white; background-color: #c365aaf0; padding: 5px;">SPORT EVENTS</td>
                 </tr>
                 <tr>
-                    <td><figure><img src="images/gallery-sport1.png" alt="Sport Event 1" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Morning yoga and wellness session.</figcaption></figure></td>
-                    <td><figure><img src="images/gallery-sport2.png" alt="Sport Event 2" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Friendly football match for volunteers.</figcaption></figure></td>
-                    <td><figure><img src="images/gallery-sport3.png" alt="Sport Event 3" class="highlight" width="260" height="200" style="background-color: black; padding: 10px;"><figcaption>Fitness challenge with community teams.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-sport1.png" alt="Sport Event 1" class="highlight" width="260" height="200" style="background-color: white; padding: 10px;"><figcaption>Morning yoga and wellness session.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-sport2.png" alt="Sport Event 2" class="highlight" width="260" height="200" style="background-color: white; padding: 10px;"><figcaption>Friendly football match for volunteers.</figcaption></figure></td>
+                    <td><figure><img src="images/gallery-sport3.png" alt="Sport Event 3" class="highlight" width="260" height="200" style="background-color: white; padding: 10px;"><figcaption>Fitness challenge with community teams.</figcaption></figure></td>
                 </tr>
             </table>
         </div>
 
-        <div id="registration-section" class="section-box" style="background-color:#f4a455f0;">
+        <div id="registration-section" class="section-box" style="background-image: url('images/login-back.png'); background-size: cover; background-position: center; color:white;">
             <h1 align="center">Event Registration</h1>
             <div class="form-block">
                 <form onsubmit="return false;">
@@ -193,7 +209,7 @@
             </div>
         </div>
 
-        <div id="feedback-section" class="section-box" style="background-color:#83bd8bf0;">
+        <div id="feedback-section" class="section-box" style="background-image: url('images/login-back.png'); background-size: cover; background-position: center; color:white;">
             <h1 align="center">Feedback Form</h1>
             <div class="form-block">
                 <form onsubmit="return false;">
@@ -218,7 +234,7 @@
             </figure>
         </div>
 
-        <div id="video-section" class="section-box" style="background-color:#d5e7f7;">
+        <div id="video-section" class="section-box" style="background-image: url('images/login-back.png'); background-size: cover; background-position: center; color:white;">
             <h1 align="center">Event Promo Video</h1>
             <video controls oncanplay="videoReady()" id="promoVideo">
                 <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
@@ -227,7 +243,7 @@
             <div id="videoStatus" class="status-box">Waiting for video...</div>
         </div>
 
-        <div id="geolocation-section" class="section-box" style="background-color:#d1f7d7;">
+        <div id="geolocation-section" class="section-box" style="background-image: url('images/login-back.png'); background-size: cover; background-position: center; color:white;">
             <h1 align="center">Find Nearby Events</h1>
             <div style="text-align:center;">
                 <button type="button" onclick="findNearbyEvents()">Find Nearby Events</button>
